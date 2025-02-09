@@ -17,9 +17,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
-      <body className="min-h-screen bg-gray-50 dark:bg-gray-900">
-        <ToastContainer position="bottom-right" />
+    <html lang="en" className={`${inter.variable} dark`}>
+      <body className="min-h-screen bg-[#0B1121]">
+        <ToastContainer 
+          position="bottom-right"
+          theme="dark"
+          toastClassName="glassmorphic"
+        />
         {children}
       </body>
     </html>

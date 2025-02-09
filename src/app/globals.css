@@ -16,6 +16,12 @@
 
 @layer base {
   body {
-    @apply antialiased;
+    @apply antialiased bg-[#0B1121] text-gray-100;
+  }
+}
+
+@layer utilities {
+  .glassmorphic {
+    @apply backdrop-blur-lg bg-gray-900/50 border border-gray-800;
   }
 } 
