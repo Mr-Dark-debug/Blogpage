@@ -24,4 +24,15 @@
   .glassmorphic {
     @apply backdrop-blur-lg bg-gray-900/50 border border-gray-800;
   }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
 } 
