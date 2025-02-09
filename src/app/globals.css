@@ -24,15 +24,20 @@
   .glassmorphic {
     @apply backdrop-blur-lg bg-gray-900/50 border border-gray-800;
   }
+
+  .animate-arrow {
+    animation: arrow 2s ease-in-out infinite;
+  }
 }
 
 @keyframes arrow {
   0% {
-    opacity: 0;
-    transform: translateX(0);
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
   }
   100% {
-    opacity: 1;
-    transform: translateX(10px);
+    transform: translateX(-4px);
   }
 } 

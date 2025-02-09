@@ -5,18 +5,18 @@ import Link from 'next/link';
 const CustomButton = () => {
   return (
     <Link href="/blog">
-      <button className="flex w-[170px] h-fit bg-[#1d2129] rounded-[40px] shadow-lg shadow-gray-300 dark:shadow-gray-950 justify-between items-center border-none cursor-pointer group">
-        <span className="w-[125px] h-full flex items-center justify-center text-white text-[1.1em] tracking-[1.2px]">
-          let's go!
+      <button className="flex w-[200px] h-fit bg-[#1d2129] rounded-[40px] shadow-lg shadow-gray-300 dark:shadow-gray-950 justify-between items-center border-none cursor-pointer group hover:bg-[#252932] transition-colors">
+        <span className="w-[155px] h-full flex items-center justify-center text-white text-[1.1em] tracking-[1.2px]">
+          Read Articles
         </span>
-        <span className="w-[45px] h-[45px] bg-[#f59aff] flex items-center justify-center rounded-full border-[3px] border-[#1d2129]">
+        <span className="w-[45px] h-[45px] bg-[#f59aff] flex items-center justify-center rounded-full border-[3px] border-[#1d2129] group-hover:border-[#252932] transition-colors">
           <svg 
             width={16} 
             height={19} 
             viewBox="0 0 16 19" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
-            className="transition-all duration-1500 group-hover:translate-x-2 group-hover:opacity-100 opacity-0"
+            className="animate-none group-hover:animate-arrow"
           >
             <circle cx="1.61321" cy="1.61321" r="1.5" fill="black" />
             <circle cx="5.73583" cy="1.61321" r="1.5" fill="black" />

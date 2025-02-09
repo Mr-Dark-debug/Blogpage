@@ -740,11 +740,11 @@ video {
 .w-6 {
   width: 1.5rem;
 }
-.w-\[125px\] {
-  width: 125px;
+.w-\[155px\] {
+  width: 155px;
 }
-.w-\[170px\] {
-  width: 170px;
+.w-\[200px\] {
+  width: 200px;
 }
 .w-\[45px\] {
   width: 45px;
@@ -757,6 +757,9 @@ video {
 }
 .max-w-7xl {
   max-width: 80rem;
+}
+.animate-none {
+  animation: none;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -987,9 +990,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
-.opacity-0 {
-  opacity: 0;
-}
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1014,11 +1014,6 @@ video {
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1036,13 +1031,19 @@ video {
 
 @keyframes arrow {
   0% {
-    opacity: 0;
-    transform: translateX(0);
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
   }
   100% {
-    opacity: 1;
-    transform: translateX(10px);
+    transform: translateX(-4px);
   }
+}
+
+.hover\:bg-\[\#252932\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 41 50 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-white:hover {
@@ -1075,14 +1076,14 @@ video {
   --tw-ring-offset-width: 2px;
 }
 
-.group:hover .group-hover\:translate-x-2 {
-  --tw-translate-x: 0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.group:hover .group-hover\:border-\[\#252932\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(37 41 50 / var(--tw-border-opacity, 1));
 }
 
-.group:hover .group-hover\:opacity-100 {
-  opacity: 1;
-}
+.group:hover .group-hover\:animate-arrow {
+    animation: arrow 2s ease-in-out infinite;
+  }
 
 .dark\:border-gray-600:is(.dark *) {
   --tw-border-opacity: 1;

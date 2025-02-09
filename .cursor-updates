@@ -9,3 +9,4 @@
 - Created a Next.js blog application with TypeScript and Tailwind CSS, including home, blog, and admin pages with modern UI components and responsive design.
 - Updated landing page with dark glassmorphic UI, added FlickeringGrid animation component, and simplified hero section.
 - Refined landing page design with tech-themed grid animation, removed navigation, and improved typography with clean layout.
+- Added custom animated button with SVG arrow pattern for blog navigation.
