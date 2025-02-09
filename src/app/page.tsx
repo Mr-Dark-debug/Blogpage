@@ -34,34 +34,36 @@ export default function Home() {
             >
               Syntax
             </VerticalCutReveal>
-            <VerticalCutReveal
-              splitBy="characters"
-              staggerDuration={0.025}
-              staggerFrom="center"
-              transition={{
-                type: "spring",
-                stiffness: 200,
-                damping: 21,
-                delay: 0.3,
-              }}
-              className="text-[#F59E0B]"
-            >
-              &
-            </VerticalCutReveal>
-            <VerticalCutReveal
-              splitBy="characters"
-              staggerDuration={0.025}
-              staggerFrom="last"
-              transition={{
-                type: "spring",
-                stiffness: 200,
-                damping: 21,
-                delay: 0.6,
-              }}
-              className="block text-[#9CA3AF]"
-            >
-              Sips
-            </VerticalCutReveal>
+            <div className="inline-flex">
+              <VerticalCutReveal
+                splitBy="characters"
+                staggerDuration={0.025}
+                staggerFrom="center"
+                transition={{
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 21,
+                  delay: 0.3,
+                }}
+                className="text-[#F59E0B] mx-2"
+              >
+                &
+              </VerticalCutReveal>
+              <VerticalCutReveal
+                splitBy="characters"
+                staggerDuration={0.025}
+                staggerFrom="last"
+                transition={{
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 21,
+                  delay: 0.6,
+                }}
+                className="text-[#9CA3AF]"
+              >
+                Sips
+              </VerticalCutReveal>
+            </div>
           </h1>
           <div className="flex justify-center">
             <CustomButton />

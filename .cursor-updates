@@ -11,3 +11,5 @@
 - Refined landing page design with tech-themed grid animation, removed navigation, and improved typography with clean layout.
 - Added custom animated button with SVG arrow pattern for blog navigation.
 - Updated button text to "Read Articles" and improved arrow animation with smooth back-and-forth motion.
+- Added VerticalCutReveal animation to title text with staggered character reveal effects.
+- Modified title layout to keep "& Sips" on the same line and added loading animation to the Read Articles button with bouncing dots effect.
